@@ -12,7 +12,7 @@ echo -e "${CYAN}Starting AI Practical Setup...${NC}"
 # This requires sudo. If you don't have it, this step will fail gracefully.
 echo -e "${GREEN}Attempting to install system Tkinter...${NC}"
 if command -v dnf &> /dev/null; then
-    sudo -n dnf install -y python3-tkinter || echo -e "${RED}Warning: Sudo access denied. Tkinter must be installed manually.${NC}"
+    sudo dnf install -y python3-tkinter || echo -e "${RED}Warning: Sudo access denied. Tkinter must be installed manually.${NC}"
 fi
 
 # 2. Extract uv if needed
